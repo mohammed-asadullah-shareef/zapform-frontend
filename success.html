@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submitted Successfully - ZapForm</title>
+    <meta name="description" content="Your form has been successfully submitted and sent to WhatsApp via ZapForm.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <style>
+        :root {
+            --itnoa-green: hsl(142, 76%, 36%);
+            --itnoa-dark: hsl(215, 25%, 27%);
+            --white: #ffffff;
+            --gray-600: #4b5563;
+            --green-600: #16a34a;
+            --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background: linear-gradient(135deg, color-mix(in srgb, var(--green-600) 5%, transparent) 0%, color-mix(in srgb, #2563eb 5%, transparent) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .success-card {
+            background-color: var(--white);
+            border-radius: 0.75rem;
+            padding: 2rem;
+            text-align: center;
+            max-width: 28rem;
+            width: 100%;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .success-icon {
+            width: 4rem;
+            height: 4rem;
+            background-color: var(--itnoa-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: var(--white);
+        }
+
+        .success-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--itnoa-dark);
+            margin-bottom: 1rem;
+        }
+
+        .success-message {
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            line-height: 1;
+        }
+
+        .btn-primary {
+            background-color: var(--itnoa-green);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--green-600);
+            color: var(--white);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--itnoa-green);
+            border: 2px solid var(--itnoa-green);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--itnoa-green);
+            color: var(--white);
+        }
+
+        @media (min-width: 640px) {
+            .success-card {
+                padding: 3rem;
+            }
+            
+            .success-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="success-card">
+        <div class="success-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        
+        <h1 class="success-title">Form Submitted Successfully!</h1>
+        <p class="success-message">
+            Your message has been sent to WhatsApp. You should receive it shortly.
+        </p>
+        
+        <div class="button-group">
+            <a href="/" class="btn btn-primary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Back to ZapForm
+            </a>
+            <a href="/#docs" class="btn btn-outline">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                View Documentation
+            </a>
+        </div>
+    </div>
+</body>
+</html>
