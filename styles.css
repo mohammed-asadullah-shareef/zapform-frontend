@@ -360,6 +360,7 @@ a:hover {
     gap: 1rem;
     margin-bottom: 3rem;
     align-items: center;
+    will-change: transform, opacity;
 }
 
 @media (min-width: 640px) {
@@ -1232,8 +1233,9 @@ pre, code {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 0;
+    z-index: -2;
     overflow: hidden;
+    pointer-events: none;
 }
 
 .hero-image {
@@ -1255,8 +1257,9 @@ pre, code {
   left: 0;
   height: 100%;
   width: 100%;
+  pointer-events: none;  
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85));
-  z-index: 0;
+  z-index: -1;
 }
 
 /* Scroll to Top Button */
